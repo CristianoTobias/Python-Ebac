@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trade - Ebac</title>
+
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- Header do site -->
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+      <div class="container">
+        <h1 class="navbar-brand m-0 section-title fs-2">Trade</h1>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu-navegacao"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav
+          class="navbar-collapse collapse justify-content-end mt-2"
+          id="menu-navegacao"
+        >
+          <ul class="nav nav-pills d-block d-md-flex">
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#contato">
+                <i class="bi bi-chat-left-text me-1"></i>
+                REGISTRO</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#cabecalho"
+      data-bs-smooth-scroll="true"
+    >
+      <section>
+        <!-- Carrosel de Imagens -->
+        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img
+                class="d-block w-100"
+                src="images/slides/bitcoin.jpg"
+                alt=""
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img class="d-block w-100" src="images/slides/trade.jpg" alt="" />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                class="d-block w-100"
+                src="images/slides/bitcoin-3029371__340.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <button
+            type="button"
+            class="carousel-control-prev"
+            data-bs-target="#carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            type="button"
+            class="carousel-control-next"
+            data-bs-target="#carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+        </div>
+        <!--Sobre o trade -->
+        <div class="pt-5 pb-5" id="sobre-o-trade">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="images/stock-market-6531146__340.jpg"
+                  class="d-block w-100 rounded"
+                  alt=""
+                />
+              </div>
+              <div class="col-md-6 mt-2 mt-md-0">
+                <h2 class="section-title mb-5 text-colored">
+                  <span 
+                    >Acesso instantâneo a investimentos, a qualquer hora e em
+                    qualquer lugar</span
+                  >
+                </h2>
+                <p class="mb-5">
+                  Investir nunca foi tão fácil. Tudo o que você procura em uma
+                  incrível e potente plataforma de investimentos, no dispositivo
+                  de sua escolha.
+                </p>
+
+                <a class="btn btn-primary" href="#contato">
+                  COMECE GRATUITAMENTE</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Informação sobre a conta de investimento -->
+      <section id="contas" class="pt-5 pb-5">
+        <div class="container">
+          <div class="row mt-4">
+            <div class="col-md-4">
+              <h3 class="section-title fs-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-bank2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.277.084a.5.5 0 0 0-.554 0l-7.5 5A.5.5 0 0 0 .5 6h1.875v7H1.5a.5.5 0 0 0 0 1h13a.5.5 0 1 0 0-1h-.875V6H15.5a.5.5 0 0 0 .277-.916l-7.5-5zM12.375 6v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zM8 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM.5 15a.5.5 0 0 0 0 1h15a.5.5 0 1 0 0-1H.5z"
+                  />
+                </svg>
+                Conta de demonstração com $10.000
+              </h3>
+              <p>
+                Teste sua estratégia de investimento com uma conta de
+                demonstração gratuita
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h3 class="section-title fs-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-bank2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.277.084a.5.5 0 0 0-.554 0l-7.5 5A.5.5 0 0 0 .5 6h1.875v7H1.5a.5.5 0 0 0 0 1h13a.5.5 0 1 0 0-1h-.875V6H15.5a.5.5 0 0 0 .277-.916l-7.5-5zM12.375 6v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zM8 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM.5 15a.5.5 0 0 0 0 1h15a.5.5 0 1 0 0-1H.5z"
+                  />
+                </svg>
+                Depósito mínimo de $10
+              </h3>
+              <p>Nenhuma taxa quando você faz um depósito ou retira fundos</p>
+            </div>
+            <div class="col-md-4">
+              <h3 class="section-title fs-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-bank2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.277.084a.5.5 0 0 0-.554 0l-7.5 5A.5.5 0 0 0 .5 6h1.875v7H1.5a.5.5 0 0 0 0 1h13a.5.5 0 1 0 0-1h-.875V6H15.5a.5.5 0 0 0 .277-.916l-7.5-5zM12.375 6v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zM8 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM.5 15a.5.5 0 0 0 0 1h15a.5.5 0 1 0 0-1H.5z"
+                  />
+                </svg>
+                Investimento mínimo de $1
+              </h3>
+              <p>É fácil começar com pequenas quantias de dinheiro</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Tipos de investimento em ativos -->
+      <section id="ativos" class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title text-center mb-5">
+              <span class="text-colored"
+                >Invista nos ativos mais populares do mundo</span
+              >
+            </h2>
+          </div>
+          <div class="row">
+            <aside class="col-md-2">
+              <nav class="nav nav-pills flex-column nav-ativos">
+                <button
+                  type="button"
+                  data-bs-toggle="tab"
+                  data-bs-target="#acoes"
+                  class="nav-link text-colored fw-bold text-start active"
+                >
+                  Ações
+                </button>
+                <button
+                  type="button"
+                  data-bs-toggle="tab"
+                  data-bs-target="#metais-preciosos"
+                  class="nav-link text-colored fw-bold text-start"
+                >
+                  Metais preciosos
+                </button>
+                <button
+                  type="button"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tesouro-direto"
+                  class="nav-link text-colored fw-bold text-start"
+                >
+                  Tesouro Direto
+                </button>
+                <button
+                  type="button"
+                  data-bs-toggle="tab"
+                  data-bs-target="#criptomoedas"
+                  class="nav-link text-colored fw-bold text-start"
+                >
+                  Criptomoedas
+                </button>
+                <button
+                  type="button"
+                  data-bs-toggle="tab"
+                  data-bs-target="#previdencia-privada"
+                  class="nav-link text-colored fw-bold text-start"
+                >
+                  Previdencia privada
+                </button>
+              </nav>
+              <a class="btn btn-primary mt-3 mb-5 link-1" href="#contato">
+                COMECE GRATUITAMENTE</a>
+            </aside>
+            <div class="col-md-10 overflow-hidden">
+              <div class="tab-content">
+                <div class="tab-pane active" id="acoes">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <img
+                        class="d-block w-100 mb-3 rounded border border-dark"
+                        src="images/acoes/petrobras.jpeg"
+                        alt="Petrobras"
+                      />
+                    </div>
+
+                    <div class="col-md-8 mb-3 p-2 rounded">
+                      <h5 class="text-colored fw-bold text-center">PETR4 (Petrobras)</h5>
+                      <p>
+                        A Petrobras é uma das empresas mais tradicionais
+                        presentes na Bolsa e é considerada uma boa alternativa
+                        para quem pensa em longo prazo. Olhando para a situação
+                        atual da Companhia, podemos destacar a sua
+                        reestruturação, baseada na estratégia de gestão de
+                        portfólio, através de vendas e desinvestimentos.
+                      </p>
+                    </div>
+                    <div class="col-md-4">
+                      <img
+                        class="d-block w-100 mb-3 rounded border border-dark"
+                        src="images/acoes/jbs.jpeg"
+                        alt="JBS"
+                      />
+                    </div>
+
+                    <div class="col-md-8 mb-3 p-2 rounded">
+                      <h5 class="text-colored fw-bold text-center">JBSS3 (JBS)</h5>
+                      <p>
+                        A JBS é a maior produtora de proteína animal do mundo,
+                        uma das mais importantes commodities atualmente, e a 2ª
+                        maior empresa global de alimentos. A companhia conta com
+                        mais de 400 unidades internacionais, além de ter várias
+                        marcas conhecidas dentro e fora do Brasil.
+                      </p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                      <img
+                        class="d-block w-100"
+                        src="images/acoes/yuds-estacio.jpeg"
+                        alt="YDUQS (antiga Estácio)"
+                      />
+                    </div>
+                    <div class="col-md-8 mb-3 p-2 rounded"mb-4">
+                      <h5 class="text-colored fw-bold text-center">YDUQ3 (Yduqs)</h5>
+                      <p>
+                        A YDUQS (antiga Estácio) é uma empresa do ramo
+                        educacional com mais de 50 anos de mercado, sendo um dos
+                        maiores grupos de educação superior privada do país em
+                        número de alunos.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane" id="metais-preciosos">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <img
+                        class="d-block w-100 mb-3 rounded border border-dark"
+                        src="images/metais-preciosos/ouro.jpeg"
+                        alt="Ouro"
+                      />
+                    </div>
+
+                    <div class="col-md-8 mb-3 p-2 rounded"mb-5">
+                      <h5 class="text-colored fw-bold text-center">Ouro</h5>
+                      <p>
+                        É um ativo de refúgio, que conserva sua estabilidade em
+                        tempos de incerteza, inclusive em épocas de queda no
+                        mercado de investimentos, endividamento público alto,
+                        câmbio enfraquecido, inflação alta, guerras e convulsão
+                        social. A história do padrão ouro faz com que o ativo se
+                        comporte mais como uma moeda do que como uma commodity.
+                        O ouro fica sujeito à especulação. O ouro é universal:
+                        durável, portátil e amplamente aceito.
+                      </p>
+                    </div>
+                    <div class="col-md-4">
+                      <img
+                        class="d-block w-100 mb-3 rounded border border-dark"
+                        src="images/metais-preciosos/platina.webp"
+                        alt="Platina"
+                      />
+                    </div>
+
+                    <div class="col-md-8 mb-3 p-2 rounded">
+                      <h5 class="text-colored fw-bold text-center">Platina</h5>
+                      <p>
+                        A platina é a mais rara entre os metais usados na área
+                        financeira. Seu preço é afetado majoritariamente pela
+                        demanda industrial e por processos de mineração. Como
+                        sua produção se concentra em menos países do que a
+                        produção de ouro, a volatilidade da platina é mais alta
+                        do que a de qualquer outro metal. Além disso, a platina
+                        tende a ficar mais exposta a incertezas mundiais do que
+                        outros metais.
+                      </p>
+                    </div>
+                    <div class="col-md-4">
+                      <img
+                        class="d-block w-100 mb-3 rounded border border-dark"
+                        src="images/metais-preciosos/paladio.webp"
+                        alt="Paladio"
+                      />
+                    </div>
+                    <div class="col-md-8 mb-3 p-2 rounded">
+                      <h5 class="text-colored fw-bold text-center">Paladio</h5>
+                      <p>
+                        O paládio é um metal semelhante à platina. É um elemento
+                        necessário para a produção de eletrônicos e também de
+                        catalisadores automotivos, além de ser usado na
+                        fabricação de detectores de monóxido de carbono.
+                      </p>
+                    </div>
+                    <div class="col-md-4">
+                      <img
+                        class="d-block w-100 mb-3 rounded border border-dark"
+                        src="images/metais-preciosos/prata.webp"
+                        alt="Prata"
+                      />
+                    </div>
+                    <div class="col-md-8 mb-3 p-2 rounded">
+                      <h5 class="text-colored fw-bold text-center">Prata</h5>
+                      <p>
+                        A prata é o segundo metal mais conhecido entre os
+                        investidores. Assim como seu irmão dourado, ela foi
+                        durante muito tempo usada como moeda. A libra esterlina,
+                        por exemplo, tem esse nome porque era equivalente a uma
+                        libra de prata (libra, neste caso, sendo uma unidade de
+                        peso do sistema britânico). A maioria dos fatores que
+                        afetam o preço do ativo são semelhantes àqueles
+                        aplicáveis ao ouro, com uma pequena diferença em termos
+                        de volatilidade: as dinâmicas de preço são parecidas,
+                        mas a prata é menos volátil que o ouro.
+                      </p>
+                    </div>
+                    <div class="col-md-4">
+                      <img
+                        class="d-block w-100 mb-3 rounded border border-dark"
+                        src="images/metais-preciosos/cobre.webp"
+                        alt="Cobre"
+                      />
+                    </div>
+                    <div class="col-md-8 mb-3 p-2 rounded">
+                      <h5 class="text-colored fw-bold text-center">Cobre</h5>
+                      <p>
+                        O cobre é um metal avermelhado e trabalhável cuja oferta
+                        é limitada. Suas aplicações são em tubulações, fiações
+                        elétricas, radiadores de carros, entre outros processos
+                        importantes. A rápida industrialização e a eletrificação
+                        fizeram a demanda por cobre registrar um aumento enorme.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tesouro-direto">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <img
+                        class="d-block w-100 mb-3 rounded border border-dark"
+                        src="images/tesouro-direto/selic.jpeg"
+                        alt="Selic"
+                      />
+                    </div>
+                    <div class="col-md-8 mb-3 p-2 rounded">
+                      <h5 class="text-colored fw-bold text-center">Selic</h5>
+                      <p>
+                        Acompanha a taxa Selic (taxa básica de juros). É o
+                        investimento mais seguro do mercado, ideal para fazer
+                        uma reserva de emergência
+                      </p>
+                    </div>
+                    <div class="col-md-4">
+                      <img
+                        class="d-block w-100 mb-3 rounded border border-dark"
+                        src="images/tesouro-direto/tesouro-ipca.jpg"
+                        alt="Tesouro IPCA+"
+                      />
+                    </div>
+                    <div class="col-md-8 mb-3 p-2 rounded">
+                      <h5 class="text-colored fw-bold text-center">IPCA+</h5>
+                      <p>
+                        Rende a variação do IPCA mais uma taxa de juros. É ideal
+                        para quem quer manter o poder de compra ao longo dos
+                        anos.
+                      </p>
+                    </div>
+                    <div class="col-md-4">
+                      <img
+                        class="d-block w-100 mb-3 rounded border border-dark"
+                        src="images/tesouro-direto/TPREFIXADO.jpg"
+                        alt="Tesouro prefixado"
+                      />
+                    </div>
+                    <div class="col-md-8 mb-3 p-2 rounded">
+                      <h5 class="text-colored fw-bold text-center">Prefixado</h5>
+                      <p>
+                        Você já sabe o rendimento da aplicação, ou seja, no
+                        resgate, receberá exatamente o que foi acordado no
+                        momento da compra.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="criptomoedas">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <img
+                        class="d-block w-100 mb-3 rounded border border-dark"
+                        src="images/criptomoeda/bitcoin1.jpg"
+                        alt="Bitcoin"
+                      />
+                    </div>
+                    <div class="col-md-8 mb-3 p-2 rounded">
+                      <h5 class="text-colored fw-bold text-center">Bitcoin</h5>
+                      <p>
+                        Bitcoin (BTC) é a mais conhecida das moedas digitais.
+                        Trata-se do primeiro sistema de pagamentos global
+                        totalmente descentralizado.
+                      </p>
+                    </div>
+                    <div class="col-md-4">
+                      <img
+                        class="d-block w-100 mb-3 rounded border border-dark"
+                        src="images/criptomoeda/bitcoin-cash.webp"
+                        alt="bitcoin-cash"
+                      />
+                    </div>
+                    <div class="col-md-8 mb-3 p-2 rounded">
+                      <h5 class="text-colored fw-bold text-center">Bitcoin Cash</h5>
+                      <p>
+                        O Bitcoin Cash (BCH) é uma nova versão do Bitcoin
+                        original, criada mais recentemente em agosto de 2017.
+                        Ela foi desenvolvida numa tentativa de aperfeiçoar a
+                        primeira moeda, que conta com taxas consideradas
+                        elevadas e demanda um tempo grande de processamento de
+                        cada operação.
+                      </p>
+                    </div>
+                    <div class="col-md-4">
+                      <img
+                        class="d-block w-100 mb-3 rounded border border-dark"
+                        src="images/criptomoeda/ethereum.jpg"
+                        alt="Ethereum"
+                      />
+                    </div>
+                    <div class="col-md-8 mb-3 p-2 rounded">
+                      <h5 class="text-colored fw-bold text-center">Ethereum</h5>
+                      <p>
+                        A moeda digital original, na verdade, se chamava Ether.
+                        Em 2016, no entanto, um hacker encontrou uma falha no
+                        sistema e, a partir dela, conseguiu roubar o equivalente
+                        a US$ 50 milhões em Ether. Diante de dúvidas sobre o que
+                        seria do futuro da moeda, a comunidade que a mantinha
+                        optou por criar uma nova rede.
+                      </p>
+                    </div>
+                    <div class="col-md-4">
+                      <img
+                        class="d-block w-100 mb-3 rounded border border-dark"
+                        src="images/criptomoeda/tether.webp"
+                        alt="tether"
+                      />
+                    </div>
+                    <div class="col-md-8 mb-3 p-2 rounded">
+                      <h5 class="text-colored fw-bold text-center">Tether</h5>
+                      <p>
+                        lançado em 2014 por uma empresa de mesmo nome, é uma
+                        stablecoin, porque tem lastro em uma moeda física. A
+                        proposta dessa criptomoeda é de manter uma paridade com
+                        o dólar americano. Ou seja, para cada Tether emitido é
+                        preciso haver um dólar equivalente em caixa.
+                      </p>
+                    </div>
+                    <div class="col-md-4">
+                      <img
+                        class="d-block w-100 mb-3 rounded border border-dark"
+                        src="images/criptomoeda/ripple-XRP.jpg"
+                        alt="ripple"
+                      />
+                    </div>
+                    <div class="col-md-8 mb-3 p-2 rounded">
+                      <h5 class="text-colored fw-bold text-center">Ripple</h5>
+                      <p>
+                        O Ripple (XRP) é um protocolo de pagamento distribuído
+                        criado em 2011, e a moeda desse sistema é a XRP. Uma
+                        característica da plataforma Ripple é suportar na sua
+                        rede outros tokens representando moedas tradicionais e
+                        até outros bens. A ideia é que o sistema permita
+                        realizar pagamentos seguros e instantâneos.
+                      </p>
+                    </div>
+                    <div class="col-md-4">
+                      <img
+                        class="d-block w-100 mb-3 rounded border border-dark"
+                        src="images/criptomoeda/Litecoin.jpg"
+                        alt="Litecoin"
+                      />
+                    </div>
+                    <div class="col-md-8 mb-3 p-2 rounded">
+                      <h5 class="text-colored fw-bold text-center">Litecoin</h5>
+                      <p>
+                        O Litecoin (LTC) foi criado em 2011 por um
+                        ex-funcionário do Google chamado Charlie Lee e tem
+                        muitas características semelhantes ao Bitcoin. A
+                        principal diferença está no processo de mineração, que
+                        busca reduzir o tempo necessário para confirmar
+                        transações feitas com a moeda. A intenção é de que seja
+                        mais fácil para qualquer pessoa participar do processo
+                        de criação de novos Litecoins.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="previdencia-privada">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <img
+                        class="d-block w-100 mb-3 rounded border border-dark"
+                        src="images/previdencia-privada/previdencia-privada1.jpg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="col-md-8 mb-3 p-2 rounded">
+                      <h5 class="text-colored fw-bold text-center">
+                        AZ Quest Luce Advisory Prev XP Seg FIRF CP
+                      </h5>
+                      <p>
+                        O AZ Quest Luce Advisory Prev XP Seg FIRF CP é um fundo
+                        de previdência de renda fixa desenvolvido para
+                        investidores pessoas físicas interessados em constituir
+                        reservas de aposentadoria e/ou investimento de longo
+                        prazo, através da gestão ativa de um portfólio composto
+                        por títulos de renda fixa e debêntures de crédito
+                        privado. 
+                      </p>
+                    </div>
+                    <div class="col-md-4">
+                      <img
+                        class="d-block w-100 mb-3 rounded border border-dark"
+                        src="images/previdencia-privada/previdencia-privada2.jpg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="col-md-8 mb-3 p-2 rounded">
+                      <h5 class="text-colored fw-bold text-center">
+                        JGP Crédito Prev Advisory XP Seg FIC RF CP
+                      </h5>
+                      <p>
+                        Lançado em 2019, é um fundo de renda fixa com estratégia
+                        Crédito High Grade Liquidez, ou seja, investe
+                        primordialmente em ativos de crédito privado de empresas
+                        com baixo risco de inadimplência e possui um prazo curto
+                        de resgate. A tomada das decisões de investimento para o
+                        fundo é feita de forma centralizada, com uma abordagem
+                        de investimentos majoritariamente Bottom-up. Com foco em
+                        ativos na América Latina, o fundo investe principalmente
+                        nos mercados de Crédito High Grade, podendo investir
+                        também, em menor proporção, nos mercados de Crédito
+                        Soberano.
+                      </p>
+                    </div>
+                    <div class="col-md-4">
+                      <img
+                        class="d-block w-100 mb-3 rounded border border-dark"
+                        src="images/previdencia-privada/previdencia-privada3.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-md-8 mb-3 p-2 rounded">
+                      <h5 class="text-colored fw-bold text-center">
+                        XP Horizonte Crédito Privado Prev XP Seg FICFIRF
+                      </h5>
+                      <p>
+                        A estratégia investe primordialmente em ativos de
+                        crédito privado de empresas com baixo risco de
+                        inadimplência (crédito High Grade). O fundo possui
+                        objetivo de CDI + 1,00% a 1,25% no longo prazo com
+                        volatilidade esperada de até 0,40% ao ano e nível de
+                        caixa médio entre 10 e 20%.
+                      </p>
+                    </div>
+                    <div class="col-md-4">
+                      <img
+                        class="d-block w-100 mb-3 rounded border border-dark"
+                        src="images/previdencia-privada/previdencia-privada4.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-md-8 mb-3 p-2 rounded">
+                      <h5 class="text-colored fw-bold text-center">
+                        Riza Lotus Prev XP Seg FICFIRF CP
+                      </h5>
+                      <p>
+                        Tabela progressiva: IR de 15% na fonte com reajuste na
+                        declaração anual de imposto de renda pessoa física
+                        conforme tabela, podendo variar de 0% (devolução dos 15%
+                        retidos na fonte) a 27,5% (pagamento de até 12,5% além
+                        do retido na fonte). Tabela regressiva: IR de 35% no
+                        primeiro ano, reduzindo 5% a cada dois anos e chegando a
+                        10% após dez anos, respeitando a regra do primeiro que
+                        entra primeiro que sai.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contato" class="pt-md-5 pb-md-5">
+        <div class="container mt-md-5 pt-md-5">
+          <div class="row">
+            <h2 class="section-title">
+              Acesso gratuito ao mundo dos investimentos
+            </h2>
+          </div>
+          <div class="row">
+            <div class="col-md-7 mb-5">
+              <form id="formulario">
+                <legend>
+                  Crie uma conta para começar a usar a plataforma.
+                </legend>
+                <div class="mb-3">
+                  <label for="email" class="form-label fw-bold text-colored"
+                    >Seu E-mail</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="senha" class="form-label fw-bold text-colored"
+                    >Senha</label
+                  >
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="checkbox"
+                    id="politica"
+                    name="politica"
+                    required
+                    
+                  />
+                  <label for="politica" class="form-label fw-bold text-colored"
+                    >Eu concordo com os Termos e Condições e com a Política de
+                    Privacidade</label
+                  >
+                </div>
+
+                <button type="submit" class="btn fw-bold">Inscreva-se</button>
+              </form>
+            </div>
+            <div class="col-md-5">
+              <div class="row">
+                <h3 class="section-title fs-4 text-colored">
+                  <i class="bi bi-hand-thumbs-up-fill"></i>
+                  Redes Sociais
+                </h3>
+                <ul class="social-links">
+                  <li class="fs-4">
+                    <a href="#">
+                      <i class="bi bi-facebook text-colored"></i>
+                    </a>
+                  </li>
+                  <li class="fs-5">
+                    <a href="#">
+                      <i class="bi bi-instagram text-colored ms-1 me-1"></i>
+                    </a>
+                  </li>
+                  <li class="fs-4">
+                    <a href="#">
+                      <i class="bi bi-whatsapp text-colored"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="row mt-4">
+                <h3 class="section-title fs-4 text-colored">
+                  <i class="bi bi-cursor-fill"></i>
+                  Endereço
+                </h3>
+                <p>Rua teste exemplo 145, Bairro Bootstrap São Paulo - Sp</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

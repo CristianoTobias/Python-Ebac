@@ -1,0 +1,165 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+/* Header do site */
+.navbar {
+  background-color: #22293d;
+}
+
+#cabecalho .nav .nav-link.active {
+  background-color: white;
+  color: gray;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+  color: white;
+}
+
+.navbar-toggler {
+  background-color: rgb(248, 189, 178);
+}
+
+.section-title {
+  font-family: Pacifico, cursive;
+}
+
+.text-colored {
+  color: orangered;
+}
+
+/* Carrosel de Imagens */
+
+/* Sobre o trade */
+
+/* Informação sobre a conta de investimento */
+#contas {
+  background-color: #161a25;
+}
+#contas p,
+#contas h3 {
+  color: white;
+}
+
+/* Tipos de investimento em ativos */
+.tab-pane .col-md-8 {
+  background-color: rgba(22, 26, 37);
+  color: white;
+}
+
+.tab-pane .col-md-8 h5 {
+  color: white;
+}
+.col-md-10 {
+  height: 78vh;
+}
+
+.col-md-10:hover {
+  overflow: auto !important;
+}
+
+.btn:hover {
+  background-color: orangered;
+}
+.btn {
+  background-color: #ff5a3e;
+  border: none;
+  font-weight: normal;
+  font-size: 0.8em;
+}
+
+.nav-ativos .nav-link.active,
+#contato button {
+  background-color: #161a25;
+  color: #fff;
+}
+
+.nav-ativos .nav-link:hover {
+  color: gray;
+}
+
+.social-links li {
+  list-style: none;
+  display: inline;
+}
+
+.social-links li a {
+  text-decoration: none;
+}
+#contato {
+  height: 100vh;
+}
+legend {
+  font-size: 1em;
+}
+
+@media only screen and (max-width: 767px) {
+  .carousel-item {
+    height: 280px;
+  }
+
+  .carousel-item img {
+    height: 100%;
+  }
+  .tab-pane .col-md-8 {
+    width: 94%;
+    margin: 0 10px;
+  }
+  .col-md-10 {
+    height: 280px;
+  }
+  .col-md-10 img {
+    height: 230px;
+  }
+  #ativos p {
+    font-size: 0.8em;
+  }
+  #contato {
+    padding-top: 90px;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    min-width: 98%;
+  }
+  #sobre-o-trade h2 {
+    margin-bottom: 10px !important;
+  }
+  #sobre-o-trade p {
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .col-md-8 p {
+    font-size: 0.8em;
+  }
+  .col-md-4 img {
+    margin-left: 10px;
+  }
+  #contato {
+    height: 50vh;
+    margin-top: -80px;
+  }
+  .col-md-10 {
+    height: 480px;
+    
+  }
+
+  .link-1 {
+    display: none;
+  }
+  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+.my-error-class {
+  color: #ff0000; /* red */
+}
+.my-valid-class {
+  color: #00cc00; /* green */
+}
